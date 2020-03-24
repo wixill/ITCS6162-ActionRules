@@ -1,6 +1,5 @@
 # ITCS6162-ActionRules
 Created by Will James
-UNCC ID#: 800864903
 
 This project was created using openjdk version 11.0.3
 
