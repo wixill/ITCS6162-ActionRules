@@ -1,0 +1,45 @@
+Decision Attribute: C
+Minimum Support: 1
+Minimum Confidence: 30
+
+LOOP 1
+
+CERTAIN RULES:
+a2→c2 100%
+f1→c2 100%
+g3→c2 100%
+
+POSSIBLE RULES:
+a1→c1 50%
+a1→c2 50%
+f2→c1 50%
+f2→c2 50%
+g1→c1 50%
+g1→c2 50%
+g2→c1 50%
+g2→c2 50%
+
+LOOP 2
+
+CERTAIN RULES:
+a2→c2 100%
+f1→c2 100%
+g3→c2 100%
+a1∧g2→c1 100%
+f2∧g1→c1 100%
+
+POSSIBLE RULES:
+a1∧f2→c1 66%
+a1∧f2→c2 33%
+a1∧g1→c1 50%
+a1∧g1→c2 50%
+f2∧g2→c1 50%
+f2∧g2→c2 50%
+
+Stable Attributes: [G]
+Reclassifying from c2 to c1
+
+ACTION RULES:
+(A, a2→a1) ∧ (G=g2) → (C, c2→c1)  (Supp: 2, Conf: 100%)
+(F, f1→f2) ∧ (G=g1) → (C, c2→c1)  (Supp: 2, Conf: 100%)
+
